@@ -45,7 +45,7 @@ var person = { //{} Object Literal
     name1: "Beam", age1: 16,
     name2: "Cody", age2: 18
 };
-    //OBJECTS; Dot Notation: changing person"s name
+//OBJECTS; Dot Notation: changing person"s name
 person.name1 = "Aie"; // <- change name from "Beam" to "Aie"
 person.name2 = "Kyle"; // <- change name from "Cody" to "Kyle"
 person.age1 = 29; // <- change age from 16 to 29
@@ -67,7 +67,7 @@ var multidimensionalArray = [["Beam", 23], ["Aie", 65]];
 multidimensionalArray[0] = ["Nay", 31]
 console.log(multidimensionalArray[0]);
 
-var myArray = [[1,2,3], [4,5,6], [7,8,9]];
+var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 // (Want to display 5)
 console.log("The displayed number is", myArray[1][1]); //myArray[element][index]; both counts from 0 1 2 ...
 
@@ -91,7 +91,7 @@ unshiftingArray.unshift("🌟", "🌸", "💦"); //unshift() will add items to t
 console.table(unshiftingArray);
 console.log(unshiftingArray);
 
-var shoppingList = [["milk",3], ["eggs",3], ["beef", 2], ["veggies", 5]];
+var shoppingList = [["milk", 3], ["eggs", 3], ["beef", 2], ["veggies", 5]];
 console.table(shoppingList);
 
 //FUNCTIONS
@@ -102,33 +102,33 @@ reusableFunction();
 reusableFunction();
 reusableFunction();
 
-    //passing values to func with arguments
-        function withParameters(x, y, z) {
-            //parameters = placeholders for values to be input in a func when called
-            console.log((x + y) * z);
-        }
-        withParameters(600, 9050, 5060); //parameters are x=600, y=9050, z=5060
+//passing values to func with arguments
+function withParameters(x, y, z) {
+    //parameters = placeholders for values to be input in a func when called
+    console.log((x + y) * z);
+}
+withParameters(600, 9050, 5060); //parameters are x=600, y=9050, z=5060
 
-        function withArgs(x, y, z) {
-            console.log((x + y) / z);
-        }
-        withArgs(62, 90, 30);
+function withArgs(x, y, z) {
+    console.log((x + y) / z);
+}
+withArgs(62, 90, 30);
 
-    // #1 Version ไปกำหนดตัวแปร myName ตอนรัน function เลย
-        function hello(myName) {
-            console.log("Hey there, " + myName + ".");
-        }
-        hello("\"Beam\"");
-        hello(`"Beam"`);
+// #1 Version ไปกำหนดตัวแปร myName ตอนรัน function เลย
+function hello(myName) {
+    console.log("Hey there, " + myName + ".");
+}
+hello("\"Beam\"");
+hello(`"Beam"`);
 
-    // #2 Version กำหนดตัวแปร myName ก่อนรัน function
-        var myName = "Japan"
-        function hello(myName) {
-            console.log("Hey there, " + myName + ".");
-        }
-        hello(myName);
+// #2 Version กำหนดตัวแปร myName ก่อนรัน function
+var myName = "Japan"
+function hello(myName) {
+    console.log("Hey there, " + myName + ".");
+}
+hello(myName);
 
-    //WORD BLANKS
+//WORD BLANKS
 function wordBlank(noun, adj, adv, verb) {
     var formedSentence = "";
     formedSentence += "The " + adj + " " + noun + " is " + verb + " " + adv + ".";
@@ -144,7 +144,7 @@ function cube(number) {
 }
 console.log(cube(69420));
 
-console.log(66+10, "離さないでよ " + `"手を!" '手を!'`);
+console.log(66 + 10, "離さないでよ " + `"手を!" '手を!'`);
 
 var myVariable = 2;
 console.log(myVariable + 20);
